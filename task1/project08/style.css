@@ -12,12 +12,12 @@ body {
 	margin: 0px;
 }
 
-.container:before, 
-.container:after {
-        content:"";
-        display: table ;
-         clear:both;
-    }
+/*.container:before, */
+/*.container:after {*/
+/*        content:"";*/
+/*        display: table ;*/
+/*         clear:both;*/
+/*    }*/
 
 [class*='col-'] {
 	float: left;
