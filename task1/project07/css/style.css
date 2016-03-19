@@ -112,7 +112,7 @@ a:hover {
 	margin-left: 117px;
 }
 
-.title {
+.slogin-content .title {
 	font-size: 60px;
 	font-weight:lighter;
 	color: #FFFFFF;
@@ -286,7 +286,7 @@ a:hover {
 }
 
 .search a {
-	word-spacing: 25px;
+	word-spacing: 25px;/*3*/
 	display: inline-block;
 	width: 235px;
 	height: 35px;
@@ -294,4 +294,46 @@ a:hover {
 	text-align: center;
 	color: #FFFFFF;
 	background: #BE4F48;
+}
+
+/*activity*/
+.activity {
+	height: 605px;
+	background: #f7f7f7;
+	padding-top: 100px;
+	display: flex;
+	justify-content: center;
+}
+
+.activity img {
+	padding: 14px 7px;
+	border: 1px solid #ddd;
+	background: #fff;
+}
+
+.activity .title {
+	font-size: 16px;
+	color: #333;
+	text-align: center;
+	margin-top: 12px;
+}
+
+.activity .title small {
+	display: block;
+	font-size: 14px;
+	margin: 12px 0 8px;
+	color: #777;
+}
+
+.activity .shanghai{
+	margin-top: 0;
+	font-size: 22px;
+	justify-content: space-between;
+}
+
+.activity .shanghai p {
+	margin: 0;
+	display: inline-flex;
+	width: 25%;
+	justify-content: center;
 }
