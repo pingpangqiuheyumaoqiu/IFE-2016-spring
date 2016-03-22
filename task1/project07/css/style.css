@@ -380,6 +380,11 @@ a:hover {
 	font-size: 150px;
 	line-height: 150px;
 	margin: 0;
+<<<<<<< HEAD
+=======
+	padding-left: 20px;
+	position: relative;
+>>>>>>> 0cbbc904128afc6d25a30dd4ad60ea6089c0a891
 }
 
 .view-detail-one .img-container .inner .position {
@@ -392,6 +397,21 @@ a:hover {
 	font-size:  20px;
 	margin-top: 10px;
 }
+<<<<<<< HEAD
+=======
+
+.view-detail-one .img-container .inner .time:after {
+	position: absolute;
+    top: 50%;
+    right: 0;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    content: '';
+    border-top: 20px solid transparent;
+    border-right: 20px solid #fff;
+    border-bottom: 20px solid transparent;
+}
+>>>>>>> 0cbbc904128afc6d25a30dd4ad60ea6089c0a891
 .view-detail-one .inner-container {
 	-webkit-flex: 1 1 430px;
     -ms-flex: 1 1 430px;
