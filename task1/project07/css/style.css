@@ -380,6 +380,8 @@ a:hover {
 	font-size: 150px;
 	line-height: 150px;
 	margin: 0;
+	padding-left: 20px;
+	position: relative;
 }
 
 .view-detail-one .img-container .inner .position {
@@ -391,6 +393,18 @@ a:hover {
 .view-detail-one .img-container .inner .date {
 	font-size:  20px;
 	margin-top: 10px;
+}
+
+.view-detail-one .img-container .inner .time:after {
+	position: absolute;
+    top: 50%;
+    right: 0;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    content: '';
+    border-top: 20px solid transparent;
+    border-right: 20px solid #fff;
+    border-bottom: 20px solid transparent;
 }
 .view-detail-one .inner-container {
 	-webkit-flex: 1 1 430px;
