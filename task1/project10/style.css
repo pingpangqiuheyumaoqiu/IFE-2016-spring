@@ -1,0 +1,62 @@
+/*Designed by 西电百度俱乐部
+2016/3/27 */
+
+* {
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	padding-left: 20px;
+	padding-right: 20px;
+	display: -webkit-flex;
+  	display: flex;
+  	justify-content: space-between;
+  	align-items: center;
+}
+.box {
+	width: 150px;
+	margin-top: 20px;
+}
+
+.box:not(.last) {
+	border: 1px solid #f00;
+}
+.first {
+	height: 120px;
+}
+
+.second {
+	height: 100px;
+}
+
+.third {
+	height: 40px;
+}
+
+.last {
+	border: 1px solid #0f0;
+	height: 200px;
+}
+
+@media only screen  and (max-width: 640px) {
+	body {	
+  		align-items: flex-start;
+  		flex-wrap: wrap;
+	}
+	
+	.first {
+		order: 2;
+	}
+	.second {
+		order: 3;
+	}
+	
+	.third {
+		order: 4;
+	}
+	
+	.last {
+		order: 1;
+	}
+}
