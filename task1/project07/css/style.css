@@ -649,6 +649,10 @@ a:hover {
     cursor: pointer;
     margin-top: 14px;
 }
+
+.more {
+	color: #aaa;
+}
 /*contact*/
 .contact {
     height: 358px;
