@@ -39,8 +39,8 @@ input,button,select,textarea{outline:none} /*去除chrome下input选中后的边
 }
 
 .icon-user {
-  width: 18px;
-  height: 18px;
+  width: 30px;
+  height: 30px;
   background-position: -11px -819px;
 }
 
@@ -95,7 +95,7 @@ input,button,select,textarea{outline:none} /*去除chrome下input选中后的边
 .header {
 	position: relative;
 	background-color: #2189bf;
-	height: 45px;
+	height: 56px;
 	width: 100%;
 	top: 0;
 }
@@ -103,36 +103,36 @@ input,button,select,textarea{outline:none} /*去除chrome下input选中后的边
 .logo {
 	position: absolute;
 	background-color: #fff;
-	height: 26px;
-	width: 26px;
+	height: 36px;
+	width: 36px;
 	margin-left: 40px;
-	margin-top: 8px;
+	margin-top: 10px;
 }
 
 .logo:after {
 	content: '';
 	position: absolute;
-	width: 12px;
-	height: 12px;
+	width: 17px;
+	height: 17px;
 	right: 0;
 	bottom: 0;
-	border-top: 2px solid #2189BF;
-	border-left: 2px solid #2189BF;
+	border-top: 3px solid #2189BF;
+	border-left: 3px solid #2189BF;
 }
 
 .search-bar {
 	position: absolute;
 	background-color: #FFFFFF;
-	right: 130px;
-	height: 20px;
-	width: 250px;
-	margin-top: 12px;
-	border-radius: 10px;
+	right: 180px;
+	height: 30px;
+	width: 330px;
+	margin-top: 10px;
+	border-radius: 15px;
 }
 
 .icon-search {
 	position: absolute;
-	top: 0px;
+	top: 5px;
 	left: 15px;
 }
 
@@ -141,23 +141,66 @@ input,button,select,textarea{outline:none} /*去除chrome下input选中后的边
 	position: relative;
 	width: 170px;
 	height: 20px;
-	margin: 0 10px 0 40px;
+	margin: 5px 10px 0 40px;
 	border: none;
 }
 
 .login {
 	color: #FFFFFF;
 	position: absolute;
-	right: 60px;
+	right: 120px;
 	margin: 12px 0 0 10px;
 	padding-left: 20px;
-	height: 21px;
-	line-height: 21px;
+	height: 30px;
+	line-height: 30px;
 	text-align: center;
-	background:  url(images/sprite.png) no-repeat -11px -819px;
+	background: url(images/login.png) no-repeat 0 6px;
 }
 
+/*container*/
 
+.container {
+	position: absolute;
+	top: 56px;
+}
+/*sidebar*/
+.sidebar {
+	position: relative;
+	width: 260px;
+	height: 100%;
+	background-color: #2a2e3d;
+}
 
+.userMsg {
+	height: 150px;
+}
+.user {
+	height: 90px;
+}
 
+.user-head {
+	position: absolute;
+	width: 58px;
+	height: 58px;
+	border-radius:  29px;
+	border: 1px solid #b2aaad;
+	margin-left: 50px;
+	margin-top: 16px;
+}
+
+.user-head img {
+	position: relative;
+	left: 4px;
+	top: 4px;
+	width: 50px;
+	border-radius: 25px;
+}
+
+.user-name {
+	font-size: 18px;
+	margin-left: 130px;
+	height: 90px;
+	line-height: 90px;
+	color: #FFFFFF;
+}
 
