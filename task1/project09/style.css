@@ -204,3 +204,69 @@ input,button,select,textarea{outline:none} /*去除chrome下input选中后的边
 	color: #FFFFFF;
 }
 
+.user-info {
+	position: relative;
+	height: 60px;
+}
+.collect {
+	position: absolute;
+	width: 130px;
+	height: 100%;
+	float: left;
+	padding-left: 70px;
+	color: #6e8095;
+	font-size: 14px;
+}
+
+.fans {
+	position: absolute;
+	height: 25px;
+	width: 50%;
+	float: left;
+	margin-left: 130px;
+	color: #6e8095;
+	font-size: 14px;
+	padding-left: 30px;
+	border-left: 1px solid #313645;
+}
+
+/*user-action*/
+.menu-list.active , .menu-list:hover {
+	background: #383d4e;
+
+}
+
+.menu-list dt,.menu-list dd {
+	cursor: pointer;
+	line-height: 28px;
+}
+
+.menu-list.active .menu-title {
+	color: #FFFFFF;
+}
+
+.menu-list {
+	color: #6E8095;
+	padding: 5px 0 5px 40px;
+}
+
+.child-tree {
+	padding-left: 20px;
+}
+
+.child-tree dd.active {
+	padding-left: 40px;
+	color: #fff;
+}
+
+.child-tree dt.active {
+	color: #fff;
+}
+
+dt.active .icon-jt {
+	transform: rotate(90deg);
+}
+
+.menu-list b {
+	opacity: .5;
+}
