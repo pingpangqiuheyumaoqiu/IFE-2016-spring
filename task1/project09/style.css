@@ -7,6 +7,9 @@
 	padding: 0;	
 }
 
+html,.header,.container {
+	min-width: 1280px;
+}
 body {
     font-size: 12px;
     font-family:"SimHei","Microsoft Yahei","Arial";
@@ -162,6 +165,7 @@ input,button,select,textarea{outline:none} /*去除chrome下input选中后的边
 .container {
 	position: absolute;
 	top: 56px;
+	bottom: 0;
 }
 /*sidebar*/
 .sidebar {
@@ -169,6 +173,7 @@ input,button,select,textarea{outline:none} /*去除chrome下input选中后的边
 	width: 260px;
 	height: 100%;
 	background-color: #2a2e3d;
+	bottom: 0px;
 }
 
 .userMsg {
@@ -241,8 +246,10 @@ input,button,select,textarea{outline:none} /*去除chrome下input选中后的边
 	line-height: 28px;
 }
 
-.menu-list.active .menu-title {
+.menu-list.active .menu-title,
+.menu-list.active > dt b {
 	color: #FFFFFF;
+	opacity: 1;
 }
 
 .menu-list {
@@ -254,15 +261,23 @@ input,button,select,textarea{outline:none} /*去除chrome下input选中后的边
 	padding-left: 20px;
 }
 
-.child-tree dd.active {
+.child-tree dd {
 	padding-left: 40px;
-	color: #fff;
+}
+.child-tree dd.active,
+.child-tree dd.active b {
+	color: #FFFFFF;
+	opacity: 1;
 }
 
 .child-tree dt.active {
 	color: #fff;
 }
 
+.child-tree dt.active b {
+	color: #fff;
+	opacity: 1;
+}
 dt.active .icon-jt {
 	transform: rotate(90deg);
 }
