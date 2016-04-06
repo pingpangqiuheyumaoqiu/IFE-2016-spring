@@ -91,7 +91,7 @@ input,button,select,textarea{outline:none} /*去除chrome下input选中后的边
 .icon-sel {
   width: 18px;
   height: 18px;
-  background-position: -7px -587px;
+  background-position: -7px -582px;
 }
 /*header*/
 
@@ -165,6 +165,8 @@ input,button,select,textarea{outline:none} /*去除chrome下input选中后的边
 .container {
 	position: absolute;
 	top: 56px;
+	left: 0;
+	right: 0;
 	bottom: 0;
 }
 /*sidebar*/
@@ -174,6 +176,7 @@ input,button,select,textarea{outline:none} /*去除chrome下input选中后的边
 	height: 100%;
 	background-color: #2a2e3d;
 	bottom: 0px;
+	float: left;
 }
 
 .userMsg {
@@ -284,4 +287,73 @@ dt.active .icon-jt {
 
 .menu-list b {
 	opacity: .5;
+}
+
+/*content*/
+.content {			/*两栏布局???*/
+	position: relative;
+	margin-left: 260px;
+}
+
+
+.route {
+	height: 30px;
+	line-height: 30px;
+	padding-left: 30px;
+	color: #AAAAAA;
+	background-color: #FFFFFF;
+}
+
+.route > a {
+	color: #aaa;
+	padding: 0 5px;
+} 
+
+.route a:last-child {
+	color: #2189bf;
+}
+
+/*content-inner*/
+.content-inner {
+	position: relative;
+	height: 100%;
+	padding: 20px 60px;
+}
+
+.query {
+	height: 70px;
+    padding-top: 15px;
+    box-shadow: 1px 0 1px 1px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    background-color: #fff;
+}
+
+.query-opt {
+	box-sizing: border-box;
+	width: 20%;
+	float: left;
+	text-align: center;
+}
+
+.query-opt span {
+	color: #aaa;
+	font-size: 14px;
+	
+}
+
+.query-opt .select-box {
+	display: inline-block;
+}
+
+.query-opt .select-box .select-title {
+	position: relative;
+    height: 23px;
+    line-height: 23px;
+    padding-left: 8px;
+    text-align: left;
+    border: 1px solid #aaa;
+    cursor: pointer;
+}
+.query-opt .select-box .select-list {
+	display: none;
 }
