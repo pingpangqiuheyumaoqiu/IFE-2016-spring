@@ -26,6 +26,10 @@ input,button,select,textarea {
 	outline:none
 } /*去除chrome下input选中后的边框*/
 
+ol, ul {
+    list-style: none;
+}
+
 [class^='btn'] {
     padding: 3px 13px;
     font-size: 12px;
@@ -413,7 +417,7 @@ dt.active .icon-jt {
 .icon-huan {
 	position: absolute;
     line-height: 59px;
-    left: 178px;
+    left: 180px;
     height: 63px;
     width: 41px;
     background-position: -5px -914px;
@@ -484,7 +488,7 @@ dt.active .icon-jt {
 	float: left;
 	text-align: left;
 	margin-left: 40px;
-	margin-top: 20px;
+	margin-top: 15px;
 }
 
 .search-btn .btn {
@@ -495,8 +499,106 @@ dt.active .icon-jt {
     color: #fff;
 }
 
+/*history*/
+.history {
+	position: relative;
+	height: 65px;
+	margin-top: 10px;
+}
 
+.lists {
+	padding-right: 140px;
+	height: 100%;
+}
 
+.lists-box {
+	position: relative;
+	width: 100%;
+	padding: 0 36px 0 36px;
+	box-sizing: border-box;
+}
 
+.history-items {
+	width: 100%;
+}
+
+.history-items li {
+	background-color: #fff;
+	float: left;
+	width: 16.6%;
+	height: 65px;
+	box-sizing: border-box;
+	border-right: 4px solid #eeeeed;
+	text-align: center;
+	cursor: pointer;
+}
+.history-items li p {
+	padding-top: 4px;
+}
+.history-items li.active p{
+	border-top: 4px solid #2189BF;
+	padding-top: 0;
+}
+
+.history-items li p {
+	height: 30px;
+	line-height: 30px;
+	font-size: 14px;
+}
+
+.history-items li h4 span {
+	position: absolute;
+	font-size: 14px;
+    color: #aaa;
+    margin-left: -10px;
+    margin-top: 3px;
+}
+
+.history-items li h4{
+	font-size: 21px;
+    color: #ec6500;
+    text-align: center;
+    padding-left: 10px;
+}
+
+.icon-pre,.icon-next {
+	position: absolute;
+    top: 0;
+    width: 30px;
+    height: 65px;
+    background-color: #fff;
+}
+.icon-pre {
+	left: 0;
+    background-position: 0 -264px;
+}
+
+.icon-next {
+	right: 5px;
+    background-position: 1px -342px;
+}
+.history-query {
+	position: absolute;
+    top: 0;
+    right: 0;
+    width: 140px;
+    height: 65px;
+    line-height: 65px;
+    line-height: 65px;
+    background-color: #fff;
+}
+
+.history-query b {
+	margin-top: 15px;
+	margin-left: 15px;
+}
+
+.history-query span {
+	position: absolute;
+	height: 65px;
+	line-height: 65px;
+	font-size: 14px;
+	margin-left: 10px;
+}
 
 
