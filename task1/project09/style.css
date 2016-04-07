@@ -22,7 +22,19 @@ a {
 	text-decoration: none;
 }
 
-input,button,select,textarea{outline:none} /*去除chrome下input选中后的边框*/
+input,button,select,textarea {
+	outline:none
+} /*去除chrome下input选中后的边框*/
+
+[class^='btn'] {
+    padding: 3px 13px;
+    font-size: 12px;
+    border-radius: 3px;
+    border: 1px solid #fff;
+    cursor: pointer;
+    transition: .2s background ease-out;
+}
+
 /*icon*/
 [class^="icon"] {
 	display: inline-block;
@@ -335,7 +347,7 @@ dt.active .icon-jt {
 	text-align: center;
 }
 
-.query-opt span {
+.query-opt > span {
 	color: #aaa;
 	font-size: 14px;
 	
@@ -357,3 +369,134 @@ dt.active .icon-jt {
 .query-opt .select-box .select-list {
 	display: none;
 }
+
+.deal-opt {
+	position: relative;
+	display: inline-block;
+	box-sizing: border-box;
+	width: 20%;
+	float: left;
+	text-align: center;
+}
+
+.buy > span,.sell > span {
+	color: #aaa;
+	font-size: 14px;
+}
+
+.buy .select-box,.sell .select-box {
+	display: inline-block;
+}
+
+.buy .select-box .select-title,
+.sell .select-box .select-title {
+	position: relative;
+	width: 120px;
+    height: 23px;
+    line-height: 23px;
+    padding-left: 8px;
+    text-align: left;
+    border: 1px solid #aaa;
+    cursor: pointer;
+}
+
+.buy .select-box .select-title b,
+.sell .select-box .select-title b {
+	position: absolute;
+	right: 5px;
+}
+
+.sell {
+	margin-top: 10px;
+}
+
+.icon-huan {
+	position: absolute;
+    line-height: 59px;
+    left: 178px;
+    height: 63px;
+    width: 41px;
+    background-position: -5px -914px;
+    color: #fff;
+}
+
+.other-opt {
+	box-sizing: border-box;
+	width: 30%;
+	float: left;
+	text-align: left;
+	margin-left: 30px;
+}
+
+.line1 ,.line2 {
+	display: flex;
+/*	float: left;*/
+	height: 25px;
+	line-height: 25px;
+	vertical-align: middle;
+}
+
+.line2 {
+	margin-top: 10px;
+}
+.line1 > span,
+.line2 > span {
+	color: #aaa;
+	font-size: 14px;
+	margin-left: 10px;
+}
+
+.line1 .select-box,
+.line2 .select-box {
+	display: inline-block;
+	margin-left: 10px;
+}
+
+.line1 .select-box .select-title,
+.line2 .select-box .select-title {
+	position: relative;
+    height: 23px;
+    line-height: 23px;
+    padding-left: 8px;
+    text-align: left;
+    border: 1px solid #aaa;
+    cursor: pointer;
+} 
+
+
+.time-box {
+	width: 120px;
+	top: 0;
+}
+
+.trading-box {
+	width: 115px;
+}
+
+.trading-box b {
+	position: absolute;
+	right: 2px;
+}
+
+.search-btn {
+	box-sizing: border-box;
+	width: 10%;
+	float: left;
+	text-align: left;
+	margin-left: 40px;
+	margin-top: 20px;
+}
+
+.search-btn .btn {
+	height: 25px;
+	width: 55px;
+	border-color: #2189bf;
+    background: #2189bf;
+    color: #fff;
+}
+
+
+
+
+
+
