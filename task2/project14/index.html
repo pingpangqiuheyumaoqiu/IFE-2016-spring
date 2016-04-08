@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>IFE JavaScript Task 01</title>
+  </head>
+<body>
+
+  <h3>污染城市列表</h3>
+  <ul id="aqi-list">
+<!--   
+    <li>第一名：福州（样例），10</li>
+  	<li>第二名：福州（样例），10</li> -->
+  </ul>
+
+<script type="text/javascript">
+
+var aqiData = [
+  ["北京", 90],
+  ["上海", 50],
+  ["福州", 10],
+  ["广州", 50],
+  ["成都", 90],
+  ["西安", 100]
+];
+
+(function () {
+
+  /*
+  在注释下方编写代码
+  遍历读取aqiData中各个城市的数据
+  将空气质量指数大于60的城市显示到aqi-list的列表中
+  */
+ 
+ 	var $ = function(id){
+ 		return document.getElementById(id);
+ 	}
+ 	
+ 	aqiData.sort(function(a,b){
+ 		return b[1]-a[1];
+ 	});
+ 	
+ 	var order = ["一","二","三","四","五","六"];
+ 	
+ 
+ 	
+ 	for (var i=0;i<aqiData.length;i++)
+ 		if(aqiData[i][1] > 60){
+ 			var list = document.createElement("li");
+ 			list.innerHTML = '第' + order[i] + '名：' + aqiData[i][0] + ', ' + aqiData[i][1];
+ 			$('aqi-list').appendChild(list);
+ 		}
+ 	
+ 		
+ 	
+// 	var n= aqiData.length;
+// 	
+// 	var sort = function(){
+// 		var i,j;
+// 		
+// 		for (i=0; i < n ; i++){
+// 			for (j = 0 ; j < n-i-1; j++){
+// 				var city,data;
+// 				if(aqiData[j][1] < aqiData[j+1][1]) {
+// 					city = aqiData[j][0];data = aqiData[j][1];
+// 					aqiData[j][0] = aqiData[j+1][0];aqiData[j][1] = aqiData[j+1][1];
+// 					aqiData[j+1][0] = city;aqiData[j+1][1] = data;
+// 				}
+// 			}
+// 		}	
+// 		for(i=0;i<n;i++){
+// 			console.log(aqiData[i][0]+aqiData[i][1]);
+// 		}
+// 	}
+// 	
+// 	var list = function(i){
+// 		var node = document.createElement("li");
+// 		var textnode;
+// 		switch(i){
+// 			case 0: textnode = "第一名: ";break;
+// 			case 1: textnode = "第二名: ";break;
+// 			case 2: textnode = "第三名: ";break;
+// 			case 3: textnode = "第四名: ";break;
+// 			case 4: textnode = "第五名: ";break;
+// 			case 5: textnode = "第六名: ";break;
+// 			case 6: textnode = "第七名: ";break;
+// 		}
+// 		textnode +=  aqiData[i][0];
+// 		node.innerHTML = textnode;
+// 		$('aqi-list').appendChild(node);
+// 		node = null;
+// 		return 0;
+// 	}
+// 	
+// 	var select = function(){
+// 		var i;
+// 		for (i=0;i < n;i++){
+// 			if(aqiData[i][1] >= 60) list(i);
+// 			else break;
+// 		}
+// 	}
+// 
+//	sort();
+//	select();
+})();
+
+</script>
+</body>
+</html>
