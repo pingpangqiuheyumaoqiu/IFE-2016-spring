@@ -601,4 +601,88 @@ dt.active .icon-jt {
 	margin-left: 10px;
 }
 
+/*statistics*/
 
+.statistics {
+	margin-top: 10px;
+}
+
+.sta-list {
+	margin-left: -2%;
+}
+
+.sta-items {
+	position: relative;
+	float: left;
+	width: 25%;
+	height: 70px;
+	box-sizing: border-box;
+	padding-left: 2%;
+}
+
+.text {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	width: 92%;
+	background-color: #fff;
+	padding-top: 8px;
+	line-height: 28px;
+}
+
+.sta-items .text p,.sta-items .text span {
+	padding-left: 5%;
+}
+
+.sta-items .text p {
+	font-size: 14px;
+	margin-top: 5px;
+	height: 14px;
+}
+
+.sta-items .text span {
+	display: block;
+	color: #aaa;
+	margin-top: 10px;
+}
+
+.sta-items .text b {
+	content: '';
+	position: absolute;
+	right: 10%;
+	top: 12px;
+	width: 60px;
+	height: 46px;
+}
+
+.sta-items.green .text {
+	border-left: 3px solid #43b29e;
+}
+
+.sta-items.green .text .col-item {
+	background-color: #43B29E;
+}
+
+.sta-items.blue .text {
+	border-left: 3px solid #2189bf;
+}
+
+.sta-items.blue .text .col-item {
+	background-color: #2189BF;
+}
+
+.sta-items.red .text {
+	border-left: 3px solid #d04a36;
+}
+
+.sta-items.red .text .col-item {
+	background-color: #D04A36;
+}
+
+.sta-items.yellow .text {
+	border-left: 3px solid #e2cd46;
+}
+
+.sta-items.yellow .text .col-item {
+	background-color: #E2CD46;
+}
