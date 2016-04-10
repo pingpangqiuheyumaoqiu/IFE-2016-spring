@@ -438,7 +438,7 @@ dt.active .icon-jt {
 
 .other-opt {
 	box-sizing: border-box;
-	width: 30%;
+	width: 300px;
 	float: left;
 	text-align: left;
 	margin-left: 30px;
@@ -706,6 +706,7 @@ dt.active .icon-jt {
 /*project*/
 .project {
 	margin-top:  18px;
+	height: 317px;
 }
 
 .project1 {
@@ -847,4 +848,122 @@ dt.active .icon-jt {
     border-color: #2189bf;
     background: #2189bf;
     color: #fff;
+}
+
+/*other*/
+.other {
+	margin-top: 10px;
+	height: 340px;
+}
+.calender {
+	float: left;
+	background: #fff;
+	border-radius: 8px;
+    box-sizing: border-box;
+    overflow: hidden;
+    border: 1px solid #d7d5d6;
+	width: 39%;
+	height: 340px;
+	box-shadow: 1px 0 1px 1px rgba(0, 0, 0, 0.1);
+}
+
+.cal-title {
+	height: 39px;
+    line-height: 39px;
+    padding-left: 20px;
+    border-bottom: 1px solid #e6e6e8;
+    color: #aaa;
+    background: #f4f5f6;
+}
+
+.cal-content {
+	padding: 0 20px;
+}
+
+.cal-opt {
+	padding: 6px 0;
+	height: 25px;
+}
+
+.cal-select {
+	width: 23%;
+    margin-right: 2%;
+}
+
+.cal-select.year {
+	width: 26%;
+}
+
+.cal-opt > div {
+	box-sizing: border-box;
+    display: block;
+    float: left;
+    cursor: pointer;
+}
+
+.cal-select .opt-hd {
+	width: auto;
+    padding: 0;
+    padding-right: 15px;
+    text-align: center;
+    position: relative;
+    height: 23px;
+    line-height: 23px;
+    border: 1px solid #aaa;
+    cursor: pointer;
+}
+
+
+
+.cal-select .tran {
+	position: absolute;
+    left: 50%;
+    margin-left: 25%;
+    top: 9px;
+    right: 1px;
+    height: 0;
+    width: 0;
+    border: 5px solid #fff;
+    border-bottom-color: transparent;
+    border-top-color: #aaa;
+}
+
+.tip-date {
+	text-align: center;
+    border: 1px solid #aaa;
+    height: 23px;
+    line-height: 23px;
+    width: 22%;
+    margin-right: 0%;
+}
+
+.date-head {
+	height: 30px;
+    border-top: 1px solid #2189bf;
+    border-bottom: 1px solid #aaa;
+}
+
+.date-head > li {
+	float: left;
+    width: 14.28%;
+    line-height: 30px;
+    text-align: center;
+}
+
+.date-body {
+	padding: 8px 0;
+}
+
+.date-body > li {
+	height: 40px;
+    line-height: 18px;
+    box-sizing: border-box;
+    border: 1px solid #fff;
+    float: left;
+    width: 14.28%;
+    text-align: center;
+}
+
+.date-body > li.jr span, .date-body > li.day b{
+	color: darkred;
 }
