@@ -30,6 +30,11 @@ ol, ul {
     list-style: none;
 }
 
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
 [class^='btn'] {
     padding: 3px 13px;
     font-size: 12px;
@@ -191,7 +196,6 @@ ol, ul {
 	width: 260px;
 	height: 100%;
 	background-color: #2a2e3d;
-	bottom: 0px;
 	float: left;
 }
 
@@ -308,7 +312,8 @@ dt.active .icon-jt {
 /*content*/
 .content {			/*两栏布局???*/
 	position: relative;
-	margin-left: 260px;
+	overflow: hidden;
+	height: 100%;
 }
 
 
@@ -331,9 +336,16 @@ dt.active .icon-jt {
 
 /*content-inner*/
 .content-inner {
-	position: relative;
-	height: 100%;
-	padding: 20px 60px;
+	position: absolute;
+    top: 30px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 20px 60px;
+    box-sizing: border-box;
+    background: #eeeeed;
+    overflow: hidden;
+    overflow-y: auto;
 }
 
 .query {
@@ -605,10 +617,14 @@ dt.active .icon-jt {
 
 .statistics {
 	margin-top: 10px;
+	display: block;
 }
 
 .sta-list {
 	margin-left: -2%;
+	display: block;
+	height: 70px;
+	margin-top: 8px;
 }
 
 .sta-items {
@@ -688,4 +704,147 @@ dt.active .icon-jt {
 }
 
 /*project*/
+.project {
+	margin-top:  18px;
+}
 
+.project1 {
+	width: 59%;
+}
+
+.project1 ,.project2 {
+	height: 317px;
+	box-shadow: 1px 0 1px 1px rgba(0, 0, 0, 0.1);
+}
+
+.project1 {
+	border-radius: 8px;
+    box-sizing: border-box;
+    overflow: hidden;
+    border: 1px solid #d7d5d6;
+    background: #fff;
+    float: left;
+}
+
+.pro-title {
+	height: 39px;
+    line-height: 39px;
+    padding-left: 20px;
+    border-bottom: 1px solid #e6e6e8;
+    color: #aaa;
+    background: #f4f5f6;
+}
+
+.pro-content {
+	padding: 12px 36px 23px;
+}
+
+.tab-head > li {
+	display: inline-block;
+	height: 27px;
+	width: 15%;
+	text-align: center;
+	line-height: 27px;
+	border-radius: 3px 3px 0 0;
+	border: 1px solid #ededf0;
+    border-bottom: 1px solid #cdcacd;
+    background: #ededf0;
+    cursor: pointer;
+}
+
+.tab-head > li.active {
+	border: 1px solid #cdcacd;
+    border-bottom-color: #fff;
+    background: #fff;
+}
+
+.tab-body {
+	padding: 3%;
+    margin-top: -1px;
+    border: 1px solid #cdcacd;
+}
+
+.tab-body > li table {
+	width: 100%;
+	text-align: center;
+}
+
+.tab-body > li tr,.tab-body > li td {
+	border: 1px solid #cdcacd;
+    height: 28px;
+}
+
+/*project2*/
+.project2 {
+	width: 40%;
+	float: right;
+	border-radius: 8px;
+    box-sizing: border-box;
+    overflow: hidden;
+    border: 1px solid #d7d5d6;
+    background: #fff;
+}
+
+.project2 .pro-content {
+	padding: 12px 28px 0;
+}
+
+.project2 .pro-content h3 {
+	color: #c7c7c6;
+	margin-bottom: 3px;
+}
+
+.project2 .pro-content .lable {
+	margin-top: 6px;
+	border: 1px solid #c7c7c6;
+    border-left: none;
+    border-right: none;
+    height: 43px;
+}
+
+.project2 .pro-content .lable .pirc {
+	width: 35%;
+    border-right: 1px solid #c7c7c6;
+}
+
+.project2 .pro-content .lable > li {
+	float: left;
+    padding-left: 13px;
+    padding-top: 3px;
+    height: 43px;
+    box-sizing: border-box;
+}
+
+.project2 .pro-content .lable > li h4 {
+	color: #c7c7c6;
+}
+
+.project2 .pro-content .info {
+	height: 140px;
+    border-bottom: 1px solid #c7c7c6;
+    margin-top: 4px;
+}
+
+.project2 .pro-content .info h4 {
+	color: #C7C7C6;
+	margin-bottom: 6px;
+}
+
+.project2 .pro-content .footer {
+	position: relative;
+}
+
+.project2 .pro-content .footer .pro-checked {
+	position: relative;
+    padding-top: 7px;
+    color: #C7C7C6;
+}
+
+.project2 .pro-content .footer .btn {
+	position: absolute;
+    right: 0px;
+    top: 5px;
+    border-color: #2189bf;
+    background: #2189bf;
+    color: #fff;
+}
