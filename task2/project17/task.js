@@ -36,7 +36,6 @@ function randomBuildData(seed) {
   for (var i = 1; i < 92; i++) {
     datStr = getDateStr(dat);
     returnData[datStr] = Math.ceil(Math.random() * seed);
-    console.log(returnData[datStr]);
     dat.setDate(dat.getDate() + 1);
   }
   return returnData;
@@ -100,7 +99,7 @@ function graTimeChange() {
  */
 function citySelectChange() {
   // 确定是否选项发生了变化 
-	if (pageState.nowSelectCity == this.value) {
+	if (pageState.nowSelectCity == this.value) { //可以不要，change只有改变才会调用函数
 		return;
 	} else {
 		pageState.nowSelectCity = this.value;
