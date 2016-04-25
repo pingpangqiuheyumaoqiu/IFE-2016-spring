@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>JavaScript和树（一）</title>
+		
+	</head>
+	<style>
+		body {
+			margin: 20px;
+		} 
+		#header {
+			margin: 100px 100px 0;
+			position: fixed;
+			padding: 20px;
+			border: 3px solid #000000;
+			background-color: #fff;
+		}
+		
+		[id*='child'] {
+			float: left;
+			padding: 20px;
+			margin: 5px;
+			border: 3px solid;
+			background-color: #fff;
+		}
+		
+		#child1 {
+			border-color: #E2CD46;
+		}
+		#child2 {
+			border-color: #D04A36 ;
+		}
+		#child3 {
+			border-color: #0000FF;
+			width: 30px;
+			height: 60px;
+		}
+		
+		#console {
+			display: flex;
+			justify-content: center;
+		}
+		
+		#console button{
+			margin: 10px;
+		}
+	</style>
+	<body>
+		<div id="header">
+			<div id="child1">
+				<div id="child2">
+					<div id="child3"></div>
+					<div id="child3"></div>
+				</div>
+				<div id="child2">
+					<div id="child3"></div>
+					<div id="child3"></div>
+				</div>
+			</div>
+			<div id="child1">
+				<div id="child2">
+					<div id="child3"></div>
+					<div id="child3"></div>
+				</div>
+				<div id="child2">
+					<div id="child3"></div>
+					<div id="child3"></div>
+				</div>
+			</div>
+		</div>
+		<div id="console" class="console">
+			<button id="pre-ord">前序</button>
+			<button id="in-ord">中序</button>
+			<button id="pos-ord">后序</button>
+		</div>
+		<script type="text/javascript" src="task.js" ></script>
+	</body>
+</html>
